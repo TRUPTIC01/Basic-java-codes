@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+ int a,b;
+ char op;
+ float res;
+ printf("Enter numbers and operations");
+ scanf("%d%c%d",&a,&op,&b);
+ switch(op)
+ { 
+  case'+':res=a+b;
+         break;
+  case'-':res=a-b;
+         break;
+  case'*':res=a*b;
+         break;
+  case'/':res=a/b;
+        {
+         if(b==0)
+         printf("error");
+         else
+         res=a/b;
+        }
+     break;
+   default:
+        break;
+}
+   printf("the result is %f",res);
+   return 0;
+}
