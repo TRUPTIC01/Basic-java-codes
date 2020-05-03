@@ -15,12 +15,10 @@ int main()
   case'*':res=a*b;
          break;
   case'/':res=a/b;
-        {
          if(b==0)
          printf("error");
          else
          res=a/b;
-        }
      break;
    default:
         break;
